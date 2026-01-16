@@ -1,31 +1,17 @@
 {
-  "name": "get-shit-done-cc",
-  "version": "1.5.15",
-  "description": "A meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
-  "bin": {
-    "get-shit-done-cc": "bin/install.js"
+  "name": "gsd-pi-extension",
+  "version": "1.0.0",
+  "description": "Get Shit Done (GSD) extension for Pi Coding Agent",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && cp -r src/assets dist/"
   },
-  "files": [
-    "bin",
-    "commands",
-    "get-shit-done",
-    "agents"
-  ],
-  "keywords": [
-    "claude",
-    "claude-code",
-    "ai",
-    "meta-prompting",
-    "context-engineering",
-    "spec-driven-development"
-  ],
-  "author": "TÂCHES",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/glittercowboy/get-shit-done.git"
+  "dependencies": {
+    "@sinclair/typebox": "^0.32.15"
   },
-  "engines": {
-    "node": ">=16.7.0"
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "latest",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
   }
 }
